@@ -51,9 +51,12 @@ if (validationname()==true &&validationEmail()==true ) {
     
         function x() {
             suuccessdiv.classList.replace("d-flex","d-none");
+            window.location.href = "login.html"
+
     
         }
         clearvalidation()
+
     }
 
     
