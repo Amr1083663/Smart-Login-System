@@ -29,7 +29,10 @@ function saveData() {
 
          window.location.href = "profile.html"
     }else{
-
+          
+         alert(`
+         Try Again
+         there maybe a problem in password or email`)
 
     }
 
@@ -40,47 +43,47 @@ function saveData() {
 
 
 
-function validationname() {
-    let validname = document.getElementById("validname")
-    var pnamregex =/^[0-9A-Za-z ]{3,12}$/;
-    let name = document.getElementById("name").value 
+// function validationname() {
+//     let validname = document.getElementById("validname")
+//     var pnamregex =/^[0-9A-Za-z ]{3,12}$/;
+//     let name = document.getElementById("name").value 
 
-    if(pnamregex.test(name)==true){
-        validname.innerHTML=`<p class="text-success d-flex "><i class="fa-solid fa-check"></i> valid value</p>`
-    return true
+//     if(pnamregex.test(name)==true){
+//         validname.innerHTML=`<p class="text-success d-flex "><i class="fa-solid fa-check"></i> valid value</p>`
+//     return true
 
-    }else{
-        validname.innerHTML=`<p class="text"><i class="fa-solid fa-xmark"></i> Must contain 3 characters at least and not more than 12</p>`
-        return false
-    }
+//     }else{
+//         validname.innerHTML=`<p class="text"><i class="fa-solid fa-xmark"></i> Must contain 3 characters at least and not more than 12</p>`
+//         return false
+//     }
     
-}
+// }
 
 
  
-function validationEmail() {
+// function validationEmail() {
     
-    var pnamregex22 =/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    let email = document.getElementById("email").value 
-    let validemail = document.getElementById("validemail")
+//     var pnamregex22 =/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+//     let email = document.getElementById("email").value 
+//     let validemail = document.getElementById("validemail")
 
    
-    if ( pnamregex22.test(email)==true ) {
-        // console.log("match");
-        validemail.innerHTML =`<p class="text-success"><i class="fa-solid fa-check"></i> valid value</p>`
-        ;
+//     if ( pnamregex22.test(email)==true ) {
+//         // console.log("match");
+//         validemail.innerHTML =`<p class="text-success"><i class="fa-solid fa-check"></i> valid value</p>`
+//         ;
       
 
-        return true;
+//         return true;
         
-    }else{
-        console.log("not match");
+//     }else{
+//         console.log("not match");
          
-        validemail.innerHTML=`<p class="text"><i class="fa-solid fa-xmark"></i>In correct email</p>`
+//         validemail.innerHTML=`<p class="text"><i class="fa-solid fa-xmark"></i>In correct email</p>`
       
 
 
-        return false;
-    }
+//         return false;
+//     }
     
-    }
+//     }
